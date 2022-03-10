@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset = "UTF-8">
+    <title>Compoud Interest </title>
+    <script src ="funciones.js"></script>
+    
+    </head>
+ 	<body>
+<form><center>
+    <h3>Compound Interest Calculator</h3>
+    
+    <label for="indep">Initial deposit:</label>
+    <input type="text" id="indep" required><br>
+    
+    <br><label for="anit">Annual interest rate:</label> 
+    <input type="text" id="anit" required> % <br> 
+    
+    <br><label for="years">Years to grow:</label>
+    <input type="text" id="years" required><br>
+    
+    <br><input type="button" onclick="calcularInt()" value="Generate compound interest"  ><br>
+    
+    
+</center></form>
+    </body>
+    
+       <br> <table style="width: 55%" border align="center">
+            <thead>
+            <tr>
+                <th> Year  </th>
+                <th> Starting Value  </th>
+                <th> Interest Earned  </th>
+                <th> Ending Value  </th>
+                </tr>
+            </thead>
+        
+            <tbody id="tBody"></tbody>
+        
+        </table>
+   
+</html>
